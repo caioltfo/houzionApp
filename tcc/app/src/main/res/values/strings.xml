@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">HouzionApp</string>
+    <string name="user">User:</string>
+    <string name="senha">Senha:</string>
+    <string name="login">Login</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="usu_rio_ou_e_mail">Usuário ou E-mail:</string>
+</resources>

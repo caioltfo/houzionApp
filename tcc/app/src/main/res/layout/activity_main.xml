@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerVertical="true"
+    android:background="@mipmap/back"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <!--android:layout_marginLeft="50"
+        android:layout_marginRight="40dp"-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="50dp"
+            android:background="@mipmap/logo"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+
+    <GridLayout
+        android:id="@+id/grid"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/meu_retangulo"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/txt_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/usu_rio_ou_e_mail" />
+
+        <EditText
+            android:id="@+id/edit_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/txt_senha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/senha" />
+
+        <EditText
+            android:id="@+id/edit_senha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/button_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1F1818"
+            android:text="@string/login"
+            android:textColor="#ffff"
+            android:onClick="showHome"
+            />
+
+
+    </GridLayout>
+
+
+</LinearLayout>
